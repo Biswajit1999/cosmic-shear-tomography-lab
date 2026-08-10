@@ -4,7 +4,7 @@ This repository has been upgraded with a compact research-quality layer: referen
 
 ## Scope
 
-cosmic-shear-tomography-lab upgraded with reproducibility metadata and validation.
+Private weak-lensing tomography lab with worker-based shear correlations and survey-style reference anchors.
 
 ## Equations And Models
 

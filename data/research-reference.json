@@ -1,6 +1,6 @@
 {
   "title": "cosmic shear tomography lab",
-  "description": "cosmic-shear-tomography-lab upgraded with reproducibility metadata and validation.",
+  "description": "Private weak-lensing tomography lab with worker-based shear correlations and survey-style reference anchors.",
   "equations": [
     "Repository metadata completeness",
     "Reference-data finite anchor validation",
