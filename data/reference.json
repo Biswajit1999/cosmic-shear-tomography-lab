@@ -1,0 +1,38 @@
+{
+  "dataset": "DES/KiDS-style cosmic-shear anchor points",
+  "source": "Compressed xi_plus-like weak-lensing anchors for validating tomographic trend behaviour.",
+  "citation": "Troxel, M.A. et al., 2018. Dark Energy Survey Year 1 results: Cosmological constraints from cosmic shear. Physical Review D, 98(4), p.043528.",
+  "x_label": "Angular separation [arcmin]",
+  "y_label": "xi_plus",
+  "points": [
+    {
+      "x": 2,
+      "y": 0.00025,
+      "label": "small-angle shear"
+    },
+    {
+      "x": 6,
+      "y": 0.00008,
+      "label": "intermediate scale"
+    },
+    {
+      "x": 15,
+      "y": 0.000027,
+      "label": "two-halo transition"
+    },
+    {
+      "x": 40,
+      "y": 0.0000075,
+      "label": "large-scale tail"
+    },
+    {
+      "x": 100,
+      "y": 0.0000019,
+      "label": "survey-scale tail"
+    }
+  ],
+  "requiredCitations": [
+    "Bartelmann, M. and Schneider, P., 2001. Weak gravitational lensing. Physics Reports, 340(4-5), pp.291-472.",
+    "Troxel, M.A. et al., 2018. Dark Energy Survey Year 1 results: Cosmological constraints from cosmic shear. Physical Review D, 98(4), p.043528."
+  ]
+}

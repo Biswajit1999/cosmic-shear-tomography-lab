@@ -1,0 +1,18 @@
+{
+  "name": "cosmic-shear-tomography-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Weak-lensing correlation functions and redshift-bin sensitivity.",
+  "scripts": {
+    "check": "node --check app.js && node --check physicsWorker.js && node --check scripts/validate.js && node scripts/validate.js"
+  },
+  "keywords": [
+    "astrophysics",
+    "simulation",
+    "canvas",
+    "web-worker",
+    "shear"
+  ],
+  "author": "Biswajit Jana",
+  "license": "MIT"
+}
