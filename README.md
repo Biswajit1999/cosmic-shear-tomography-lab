@@ -41,3 +41,7 @@ Compressed xi_plus-like weak-lensing anchors for validating tomographic trend be
 
 - Bartelmann, M. and Schneider, P., 2001. Weak gravitational lensing. Physics Reports, 340(4-5), pp.291-472.
 - Troxel, M.A. et al., 2018. Dark Energy Survey Year 1 results: Cosmological constraints from cosmic shear. Physical Review D, 98(4), p.043528.
+
+## Research Quality Upgrade
+
+See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors, equations and research boundaries added to this repository.
