@@ -1,6 +1,6 @@
 {
   "dataset": "DES/KiDS-style cosmic-shear anchor points",
-  "source": "Compressed xi_plus-like weak-lensing anchors for validating tomographic trend behaviour.",
+  "source": "Illustrative xi_plus anchor points showing the correct order-of-magnitude decline with angular scale, not digitized from a specific published table. For genuine published constraints, see published_S8_values below.",
   "citation": "Troxel, M.A. et al., 2018. Dark Energy Survey Year 1 results: Cosmological constraints from cosmic shear. Physical Review D, 98(4), p.043528.",
   "x_label": "Angular separation [arcmin]",
   "y_label": "xi_plus",
@@ -12,27 +12,33 @@
     },
     {
       "x": 6,
-      "y": 0.00008,
+      "y": 8e-05,
       "label": "intermediate scale"
     },
     {
       "x": 15,
-      "y": 0.000027,
+      "y": 2.7e-05,
       "label": "two-halo transition"
     },
     {
       "x": 40,
-      "y": 0.0000075,
+      "y": 7.5e-06,
       "label": "large-scale tail"
     },
     {
       "x": 100,
-      "y": 0.0000019,
+      "y": 1.9e-06,
       "label": "survey-scale tail"
     }
   ],
   "requiredCitations": [
     "Bartelmann, M. and Schneider, P., 2001. Weak gravitational lensing. Physics Reports, 340(4-5), pp.291-472.",
     "Troxel, M.A. et al., 2018. Dark Energy Survey Year 1 results: Cosmological constraints from cosmic shear. Physical Review D, 98(4), p.043528."
-  ]
+  ],
+  "published_S8_values": {
+    "KiDS-1000 (Asgari et al. 2021)": "0.759 +0.024/-0.021",
+    "DES Y3 (Amon et al. 2022 / Secco et al. 2022)": "0.759 +/- 0.025 (approx, DES Y3 cosmic shear)",
+    "Planck 2018 CMB (Planck Collaboration 2020)": "0.834 +/- 0.016",
+    "note": "The mild ~2-3 sigma pull between low-redshift weak-lensing S8 values and the Planck CMB value is known as the S8 tension."
+  }
 }

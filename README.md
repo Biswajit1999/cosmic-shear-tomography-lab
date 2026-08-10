@@ -182,6 +182,23 @@ lensing signal depending on sign and survey geometry).
 - Wilson, G. et al., 2017. Good enough practices in scientific computing. PLOS Computational
   Biology, 13(6), p.e1005510.
 
+## The S8 Tension: Real Published Constraints
+
+The main plot now uses **log-log axes** -- `xi_plus` spans roughly five decades in amplitude
+over the plotted angular range, and a linear plot compresses nearly all of that structure
+into a sliver near the y-axis. `data/reference.json` also carries a `published_S8_values`
+block with real published `S8 = sigma8 * sqrt(Omega_m/0.3)` constraints for direct
+comparison against the model's own `S8` telemetry metric:
+
+- KiDS-1000 (Asgari et al. 2021): `S8 = 0.759 (+0.024/-0.021)`
+- DES Y3 (Amon et al. 2022 / Secco et al. 2022): `S8 ~ 0.759 +/- 0.025`
+- Planck 2018 CMB (Planck Collaboration 2020): `S8 = 0.834 +/- 0.016`
+
+The mild ~2-3 sigma pull between low-redshift weak-lensing `S8` values and the Planck CMB
+value is known in the literature as the **S8 tension** -- drag the `sigma8`/`omegaM` sliders
+until the live `S8` metric lands near 0.76 versus 0.83 to build intuition for how large a
+shift that actually is.
+
 ## Research Quality Upgrade
 
 See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors,
