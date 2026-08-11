@@ -195,9 +195,13 @@ comparison against the model's own `S8` telemetry metric:
 - Planck 2018 CMB (Planck Collaboration 2020): `S8 = 0.834 +/- 0.016`
 
 The mild ~2-3 sigma pull between low-redshift weak-lensing `S8` values and the Planck CMB
-value is known in the literature as the **S8 tension** -- drag the `sigma8`/`omegaM` sliders
-until the live `S8` metric lands near 0.76 versus 0.83 to build intuition for how large a
-shift that actually is.
+value is known in the literature as the **S8 tension**. The `planck_tension_sigma` metric
+computes this live: `(S8_model - 0.834) / 0.016`, the same "tension in sigma" statistic used
+throughout the real S8-tension literature (e.g. Heymans et al., 2021, *A&A*, 646, A140,
+KiDS-1000) to quantify how significant a disagreement actually is, rather than leaving it as a
+qualitative "the numbers look different." At the default sliders this lands around `-1.5 sigma`
+-- set `sigma8`/`omegaM` to reproduce KiDS-1000's `S8 ~ 0.759` and it moves to roughly `-4.7
+sigma`, the real (larger) tension reported by that survey specifically.
 
 ## Research Quality Upgrade
 
