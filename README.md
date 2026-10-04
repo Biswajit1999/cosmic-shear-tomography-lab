@@ -111,9 +111,8 @@ values respond in real time. Use "Reset model" to return to the fiducial paramet
 npm run check
 ```
 
-The validation script checks required files, JSON reference data, worker syntax, citations, and
-absence of unfinished scaffold tokens. See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for details
-on the validation layer, reference anchors, and research boundaries.
+The validation script checks required files, JSON reference data, worker syntax, citations,
+reference anchors, research boundaries, and the absence of unfinished scaffold tokens.
 
 ## Architecture
 
@@ -202,8 +201,3 @@ KiDS-1000) to quantify how significant a disagreement actually is, rather than l
 qualitative "the numbers look different." At the default sliders this lands around `-1.5 sigma`
 -- set `sigma8`/`omegaM` to reproduce KiDS-1000's `S8 ~ 0.759` and it moves to roughly `-4.7
 sigma`, the real (larger) tension reported by that survey specifically.
-
-## Research Quality Upgrade
-
-See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors,
-equations, and research boundaries added to this repository.
