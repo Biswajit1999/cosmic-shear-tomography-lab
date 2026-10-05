@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">Cosmic Shear Tomography Lab</title><desc id="d">A schematic field of background galaxies distorted by foreground matter, with three tomographic source planes.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0d1818"/><stop offset="1" stop-color="#1c292b"/></linearGradient><radialGradient id="lens"><stop stop-color="#8fe1d8" stop-opacity=".62"/><stop offset="1" stop-color="#8fe1d8" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/><path d="M0 494C240 392 388 548 640 424s350-76 560-184" fill="none" stroke="#79c2c0" stroke-opacity=".25" stroke-width="2"/><circle cx="820" cy="320" r="230" fill="url(#lens)"/>
+<g fill="none" stroke-linecap="round"><path d="M700 80v450M820 56v490M940 82v444" stroke="#edf5f2" stroke-opacity=".12"/><path d="M680 118h310M650 314h370M690 510h290" stroke="#edbd68" stroke-opacity=".28"/></g>
+<g fill="none" stroke="#d8f6f1" stroke-width="5" opacity=".9">
+<ellipse cx="720" cy="128" rx="22" ry="9" transform="rotate(-18 720 128)"/><ellipse cx="870" cy="120" rx="21" ry="8" transform="rotate(12 870 120)"/><ellipse cx="965" cy="173" rx="19" ry="7" transform="rotate(38 965 173)"/>
+<ellipse cx="690" cy="318" rx="25" ry="8" transform="rotate(-42 690 318)"/><ellipse cx="840" cy="286" rx="24" ry="8" transform="rotate(8 840 286)"/><ellipse cx="1000" cy="350" rx="22" ry="7" transform="rotate(44 1000 350)"/>
+<ellipse cx="735" cy="492" rx="27" ry="7" transform="rotate(-50 735 492)"/><ellipse cx="880" cy="520" rx="25" ry="8" transform="rotate(18 880 520)"/><ellipse cx="970" cy="468" rx="24" ry="7" transform="rotate(52 970 468)"/>
+</g>
+<g font-family="Inter,Segoe UI,sans-serif" fill="#edf5f2"><text x="72" y="112" font-size="18" letter-spacing="5" fill="#79c2c0">WEAK LENSING · STRUCTURE GROWTH</text><text x="72" y="194" font-family="Georgia,serif" font-size="64">Cosmic Shear</text><text x="72" y="263" font-family="Georgia,serif" font-size="64">Tomography Lab</text><text x="72" y="326" font-size="22" fill="#a6bab5">Source planes · intrinsic alignment · S8 context</text><text x="72" y="522" font-size="17" fill="#edbd68">ILLUSTRATIVE ξ+ MODEL — PUBLISHED CONSTRAINTS KEPT DISTINCT</text></g>
+</svg>

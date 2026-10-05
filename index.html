@@ -4,19 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Weak-lensing correlation functions and redshift-bin sensitivity.">
+  <meta property="og:image" content="https://biswajit1999.github.io/cosmic-shear-tomography-lab/assets/social-preview.svg">
   <title>Cosmic Shear Tomography Lab</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="shell">
+  <a class="skip-link" href="#lab">Skip to laboratory</a>
+  <section class="research-intro" aria-labelledby="research-question">
+    <p class="intro-kicker">Weak lensing · structure growth laboratory</p>
+    <h2 id="research-question">How does source redshift change the matter we can see?</h2>
+    <p class="lede">Compare representative source planes, vary the structure amplitude, and keep illustrative curves separate from published KiDS, DES and Planck constraints.</p>
+    <div class="intro-actions"><a href="#lab">Open tomography console</a><a href="https://kids.strw.leidenuniv.nl/DR4/KiDS-1000_cosmicshear.php" target="_blank" rel="noopener">KiDS-1000 data products ↗</a></div>
+    <dl class="evidence-strip"><div><dt>Survey anchor</dt><dd>KiDS-1000</dd></div><div><dt>Source planes</dt><dd>3 simultaneous</dd></div><div><dt>Statistic</dt><dd>ξ+ proxy</dd></div><div><dt>Published S8</dt><dd>0.759 +0.024/−0.021</dd></div></dl>
+  </section>
+  <section class="method-strip" aria-label="Scientific scope"><article><span>01</span><h3>Geometry</h3><p>Source planes at z = 0.4, an adjustable middle plane, and z = 1.1 expose lensing-depth sensitivity.</p></article><article><span>02</span><h3>Nuisance physics</h3><p>Intrinsic alignment is visible as an explicit suppression parameter, not hidden in presentation copy.</p></article><article><span>03</span><h3>Claim boundary</h3><p>The curves are analytic teaching proxies; linked FITS vectors and covariances are the route to survey inference.</p></article></section>
+  <main class="shell" id="lab">
     <header class="topbar">
       <div>
-        <p class="eyebrow">Research Console</p>
+        <p class="eyebrow">Tomographic console</p>
         <h1>Cosmic Shear Tomography Lab</h1>
       </div>
-      <div class="status-card">
-        <span id="workerStatus">Worker booting</span>
-        <strong id="frameRate">-- fps</strong>
+      <div class="topbar-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme">Night mode</button><div class="status-card">
+        <span id="workerStatus">Worker booting</span><strong id="frameRate">-- fps</strong>
+      </div>
       </div>
     </header>
 
@@ -66,6 +76,6 @@
     </nav>
   </footer>
   <script src="app.js"></script>
-  <script src="research-overlay.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>

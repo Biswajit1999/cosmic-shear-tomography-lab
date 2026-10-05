@@ -1,5 +1,7 @@
 # Cosmic Shear Tomography Lab
 
+![Cosmic Shear Tomography Lab scientific cover](assets/social-preview.svg)
+
 Weak-lensing correlation functions and redshift-bin sensitivity, explored interactively in the browser.
 
 Created and maintained by Biswajit Jana.
@@ -86,9 +88,8 @@ This is a zero-build, static browser laboratory — there is no backend or build
 5. Moving any control slider re-runs the worker in real time; the plot, heatmap, and telemetry
    panel update accordingly, and the reference anchor points stay fixed on the plot as a visual
    check on the model's scale and shape.
-6. `research-overlay.js` adds a small, non-invasive quality panel showing validation status and
-   the benchmark anchors in `data/research-reference.json`, which are checked (independent of the
-   physics model) by `scripts/validate_repository.mjs`.
+6. Three representative source planes are drawn simultaneously. Published survey constraints
+   remain contextual benchmarks and are never presented as fits to the illustrative curves.
 
 This is a teaching/exploration tool, not a cosmological inference pipeline: the model is a
 compact analytic approximation chosen to reproduce the qualitative scaling behaviour of ξ+ (power-law
@@ -117,7 +118,7 @@ reference anchors, research boundaries, and the absence of unfinished scaffold t
 ## Architecture
 
 - `index.html` — mission-control interface.
-- `styles.css` — dense dark scientific dashboard.
+- `styles.css` — responsive editorial interface with day/night themes.
 - `app.js` — UI state, Canvas rendering, and worker orchestration.
 - `physicsWorker.js` — numerical model and heatmap generation (`shear()` implements the ξ+ model
   used by this lab).
@@ -125,7 +126,6 @@ reference anchors, research boundaries, and the absence of unfinished scaffold t
   the simulation.
 - `data/research-reference.json` — separate benchmark anchors used by the repository-quality
   validator, independent of the physics model.
-- `research-overlay.js` — non-invasive quality/telemetry overlay.
 - `scripts/validate.js`, `scripts/validate_repository.mjs` — no-dependency repository validation.
 
 ## Math Appendix
@@ -193,11 +193,10 @@ comparison against the model's own `S8` telemetry metric:
 - DES Y3 (Amon et al. 2022 / Secco et al. 2022): `S8 ~ 0.759 +/- 0.025`
 - Planck 2018 CMB (Planck Collaboration 2020): `S8 = 0.834 +/- 0.016`
 
-The mild ~2-3 sigma pull between low-redshift weak-lensing `S8` values and the Planck CMB
-value is known in the literature as the **S8 tension**. The `planck_tension_sigma` metric
-computes this live: `(S8_model - 0.834) / 0.016`, the same "tension in sigma" statistic used
-throughout the real S8-tension literature (e.g. Heymans et al., 2021, *A&A*, 646, A140,
-KiDS-1000) to quantify how significant a disagreement actually is, rather than leaving it as a
-qualitative "the numbers look different." At the default sliders this lands around `-1.5 sigma`
--- set `sigma8`/`omegaM` to reproduce KiDS-1000's `S8 ~ 0.759` and it moves to roughly `-4.7
-sigma`, the real (larger) tension reported by that survey specifically.
+The low-redshift weak-lensing and Planck values are often discussed as the **S8 tension**, but a
+rigorous significance requires the full posteriors, covariance assumptions, and a stated tension
+metric. This lab therefore reports only signed differences, `delta_S8_vs_KiDS` and
+`delta_S8_vs_Planck`. It deliberately does not label a slider-to-survey difference as “sigma”.
+
+For survey-grade analysis, use the official KiDS-1000 FITS data vectors, covariance matrices and
+redshift distributions linked from the interface; this repository does not fit those products.
