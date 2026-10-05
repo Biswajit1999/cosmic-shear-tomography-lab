@@ -1,3 +1,5 @@
 node_modules/
 .DS_Store
 *.log
+research/source/extracted/
+research/source/KiDS1000_cosmic_shear_data_release.tgz

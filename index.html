@@ -1,81 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Weak-lensing correlation functions and redshift-bin sensitivity.">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore real KiDS-1000 cosmic-shear correlation measurements, covariance and source-redshift distributions.">
   <meta property="og:image" content="https://biswajit1999.github.io/cosmic-shear-tomography-lab/assets/social-preview.svg">
-  <title>Cosmic Shear Tomography Lab</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Reading Cosmic Shear | KiDS-1000 Data Laboratory</title><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#lab">Skip to laboratory</a>
-  <section class="research-intro" aria-labelledby="research-question">
-    <p class="intro-kicker">Weak lensing · structure growth laboratory</p>
-    <h2 id="research-question">How does source redshift change the matter we can see?</h2>
-    <p class="lede">Compare representative source planes, vary the structure amplitude, and keep illustrative curves separate from published KiDS, DES and Planck constraints.</p>
-    <div class="intro-actions"><a href="#lab">Open tomography console</a><a href="https://kids.strw.leidenuniv.nl/DR4/KiDS-1000_cosmicshear.php" target="_blank" rel="noopener">KiDS-1000 data products ↗</a></div>
-    <dl class="evidence-strip"><div><dt>Survey anchor</dt><dd>KiDS-1000</dd></div><div><dt>Source planes</dt><dd>3 simultaneous</dd></div><div><dt>Statistic</dt><dd>ξ+ proxy</dd></div><div><dt>Published S8</dt><dd>0.759 +0.024/−0.021</dd></div></dl>
-  </section>
-  <section class="method-strip" aria-label="Scientific scope"><article><span>01</span><h3>Geometry</h3><p>Source planes at z = 0.4, an adjustable middle plane, and z = 1.1 expose lensing-depth sensitivity.</p></article><article><span>02</span><h3>Nuisance physics</h3><p>Intrinsic alignment is visible as an explicit suppression parameter, not hidden in presentation copy.</p></article><article><span>03</span><h3>Claim boundary</h3><p>The curves are analytic teaching proxies; linked FITS vectors and covariances are the route to survey inference.</p></article></section>
-  <main class="shell" id="lab">
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">Tomographic console</p>
-        <h1>Cosmic Shear Tomography Lab</h1>
-      </div>
-      <div class="topbar-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme">Night mode</button><div class="status-card">
-        <span id="workerStatus">Worker booting</span><strong id="frameRate">-- fps</strong>
-      </div>
-      </div>
-    </header>
-
-    <section class="grid">
-      <aside class="panel controls">
-        <div class="panel-title">
-          <span>Controls</span>
-          <b id="referenceLabel">Reference loading</b>
-        </div>
-        <div id="controls"></div>
-        <button id="reset">Reset model</button>
-      </aside>
-
-      <section class="panel plot-panel">
-        <div class="panel-title">
-          <span>Reference Data + Simulation</span>
-          <b id="seriesLabel">Angular separation [arcmin]</b>
-        </div>
-        <canvas id="seriesCanvas" width="1200" height="620"></canvas>
-      </section>
-
-      <section class="panel heat-panel">
-        <div class="panel-title">
-          <span>Parameter Response Field</span>
-          <b>worker heatmap</b>
-        </div>
-        <canvas id="heatCanvas" width="620" height="620"></canvas>
-      </section>
-
-      <section class="panel telemetry">
-        <div class="panel-title">
-          <span>Telemetry</span>
-          <b id="runId">run --</b>
-        </div>
-        <div id="metrics" class="metrics"></div>
-        <pre id="notes"></pre>
-      </section>
+  <a class="skip-link" href="#explorer">Skip to the data explorer</a>
+  <header class="site-head"><a class="wordmark" href="#top" aria-label="Reading Cosmic Shear home"><span>ξ+</span> Reading Cosmic Shear</a><nav aria-label="Page sections"><a href="#learn">Learn</a><a href="#explorer">Evidence</a><a href="#method">Method</a></nav><button id="themeToggle" class="theme-button" type="button">Night mode</button></header>
+  <main id="top">
+    <section class="hero"><div class="hero-copy"><p class="overline">KiDS-1000 · observed galaxy shapes · 1006 deg²</p><h1>Dark matter leaves fingerprints on galaxy shapes.</h1><p class="hero-lede">They are too small to trust galaxy by galaxy. This laboratory shows how KiDS combined noisy shapes into a measurable correlation—and why looking farther into the Universe strengthens the signal.</p><a class="primary-link" href="#explorer">Read the real measurement</a></div>
+      <figure class="lensing-story" aria-labelledby="lensing-caption"><svg viewBox="0 0 680 420" role="img" aria-label="Light from distant galaxies is deflected by foreground matter before reaching the telescope"><defs><radialGradient id="mass"><stop stop-color="#ff6b4a" stop-opacity=".65"/><stop offset="1" stop-color="#ff6b4a" stop-opacity="0"/></radialGradient></defs><g class="ray"><path d="M78 95Q310 112 598 205"/><path d="M78 205Q315 205 598 205"/><path d="M78 315Q310 298 598 205"/></g><circle cx="345" cy="205" r="120" fill="url(#mass)"/><circle cx="345" cy="205" r="14" class="mass-core"/><g class="galaxies"><ellipse cx="78" cy="95" rx="25" ry="9" transform="rotate(28 78 95)"/><ellipse cx="78" cy="205" rx="26" ry="9"/><ellipse cx="78" cy="315" rx="25" ry="9" transform="rotate(-28 78 315)"/></g><g class="telescope"><path d="M598 168l44 37-44 37z"/><path d="M642 205h24"/></g><text x="34" y="378">background galaxies</text><text x="281" y="378">foreground matter</text><text x="565" y="378">telescope</text></svg><figcaption id="lensing-caption">Foreground structure changes the apparent orientation of background galaxies. The coherent component is <strong>cosmic shear</strong>.</figcaption></figure>
     </section>
-  </main>
-  <footer class="site-footer">
-    <span>&copy; 2026 Biswajit Jana</span>
-    <nav>
-      <a href="https://biswajit1999.github.io/Biswajit_Jana.github.io/" target="_blank" rel="noopener">Portfolio</a>
-      <a href="https://github.com/Biswajit1999" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/biswajit-jana-27011a151/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://orcid.org/0009-0002-2411-1891" target="_blank" rel="noopener">ORCID</a>
-    </nav>
-  </footer>
-  <script src="app.js"></script>
-  <script src="theme.js"></script>
-</body>
-</html>
+    <section class="concepts" id="learn" aria-labelledby="learn-title"><div class="section-heading"><p class="overline">Three ideas before the graph</p><h2 id="learn-title">What are we actually measuring?</h2></div><div class="concept-grid"><article><b>01</b><h3>Every galaxy is noisy</h3><p>Its original shape is unknown. One stretched galaxy proves nothing, so astronomers compare many galaxy pairs.</p></article><article><b>02</b><h3>ξ+ measures agreement</h3><p>Positive ξ+ means nearby galaxy shapes share a preferred alignment more often than random orientations would produce.</p></article><article><b>03</b><h3>Tomography adds depth</h3><p>KiDS divides sources into five redshift bins. Higher bins look through more intervening structure and usually accumulate more lensing.</p></article></div></section>
+    <section class="explorer" id="explorer" aria-labelledby="explorer-title"><div class="section-heading"><p class="overline">Real KiDS-1000 ξ+ vector</p><h2 id="explorer-title">Compare three lines of sight through cosmic history.</h2><p>Choose a bin pair. Every dot, uncertainty bar and covariance calculation below comes from the official KiDS-1000 FITS release.</p></div>
+      <div class="pair-choices" role="group" aria-label="Choose a tomographic bin pair"><button class="pair-card active" data-pair="1x1" aria-pressed="true"><span>Nearby × nearby</span><strong>Bins 1 × 1</strong><small>mean z ≈ 0.26</small></button><button class="pair-card" data-pair="1x5" aria-pressed="false"><span>Nearby × distant</span><strong>Bins 1 × 5</strong><small>mean z ≈ 0.26 × 0.98</small></button><button class="pair-card" data-pair="5x5" aria-pressed="false"><span>Distant × distant</span><strong>Bins 5 × 5</strong><small>mean z ≈ 0.98</small></button><label class="all-pairs">All 15 pairs<select id="pairSelect" aria-label="Select any KiDS tomographic bin pair"></select></label></div>
+      <div class="evidence-layout"><article class="chart-card main-chart-card"><div class="card-head"><div><p class="overline">Observed correlation</p><h3 id="chartTitle">Nearby sources: bins 1 × 1</h3></div><button id="downloadCsv" class="quiet-button" type="button">Download selected data</button></div><p class="chart-summary" id="chartSummary"></p><canvas id="shearChart" width="980" height="560" aria-label="KiDS-1000 xi-plus measurements with one-sigma uncertainties"></canvas><div class="chart-key"><span><i class="dot-key"></i>KiDS-1000 ξ+</span><span><i class="bar-key"></i>1σ marginal uncertainty</span><span>Horizontal axis is logarithmic</span></div></article>
+        <aside class="result-column" aria-live="polite"><article class="finding-card"><p class="overline">What this pair says</p><h3 id="findingTitle">Loading evidence…</h3><p id="findingText"></p></article><dl class="metric-list"><div><dt>Correlated distance from zero</dt><dd id="snrValue">—</dd><small>√(dᵀC⁻¹d), using the 9×9 covariance block</small></div><div><dt>Zero-shear p-value</dt><dd id="pValue">—</dd><small>χ² survival probability with 9 degrees of freedom</small></div><div><dt>Source depth</dt><dd id="meanZValue">—</dd><small>Mean redshift from the released n(z)</small></div></dl><details><summary>What does “zero shear” mean?</summary><p>It is a deliberately simple null hypothesis: all nine ξ+ values are zero. Rejecting it shows correlated galaxy shapes in this data vector. It does <strong>not</strong> by itself estimate dark-matter density or S8.</p></details></aside></div>
+      <div class="secondary-grid"><article class="chart-card"><div class="card-head"><div><p class="overline">Where are the source galaxies?</p><h3>Released redshift distributions n(z)</h3></div></div><canvas id="redshiftChart" width="760" height="390" aria-label="KiDS-1000 source redshift distributions for the selected bins"></canvas></article><article class="interpretation-card"><p class="overline">Read the experiment</p><h3>Longer light paths sample more structure.</h3><p id="depthText"></p><div class="depth-scale" aria-hidden="true"><span>observer</span><i></i><span id="depthScaleLabel">sources</span></div></article></div>
+      <details class="data-disclosure"><summary>Inspect the nine measured values</summary><div class="table-wrap"><table><thead><tr><th>θ (arcmin)</th><th>ξ+</th><th>1σ uncertainty</th><th>ξ+/σ</th></tr></thead><tbody id="dataRows"></tbody></table></div></details>
+    </section>
+    <section class="method" id="method"><div class="section-heading"><p class="overline">Research boundary</p><h2>What this laboratory does—and does not do.</h2></div><div class="method-grid"><article><h3>Directly observed here</h3><p>Fifteen ξ+ tomographic vectors, their angular bins, the released covariance blocks and the five KiDS source-redshift distributions.</p></article><article><h3>Calculated here</h3><p>A transparent χ² test of ξ+ = 0 for one selected bin pair. The complete covariance block is used; points are not treated as independent.</p></article><article><h3>Not claimed here</h3><p>No S8 posterior, cosmological fit, intrinsic-alignment inference or baryonic-feedback constraint. Those require the full likelihood and theory pipeline.</p></article></div><div class="provenance"><div><span>Source</span><a href="https://kids.strw.leidenuniv.nl/DR4/KiDS-1000_cosmicshear.php" target="_blank" rel="noopener">Official KiDS-1000 release ↗</a></div><div><span>Paper</span><a href="https://doi.org/10.1051/0004-6361/202039070" target="_blank" rel="noopener">Asgari et al. 2021, A&amp;A 645 A104 ↗</a></div><div><span>Archive SHA-256</span><code>97729199…c7bb3</code></div></div></section>
+  </main><footer><span>Biswajit Jana · 2026</span><span>Independent educational analysis of public KiDS-1000 products</span></footer><script src="app.js"></script>
+</body></html>
