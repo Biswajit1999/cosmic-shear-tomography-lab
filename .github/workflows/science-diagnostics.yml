@@ -1,0 +1,25 @@
+name: KiDS scientific covariance
+on:
+  push:
+    paths:
+      - 'scripts/kids_covariance.py'
+      - 'tests/test_kids_covariance.py'
+      - 'data/kids1000-xip.json'
+      - '.github/workflows/science-diagnostics.yml'
+  pull_request:
+    paths:
+      - 'scripts/kids_covariance.py'
+      - 'tests/test_kids_covariance.py'
+      - 'data/kids1000-xip.json'
+      - '.github/workflows/science-diagnostics.yml'
+jobs:
+  numerical:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'numpy>=1.26,<3' 'scipy>=1.11,<2' 'pytest>=8,<10'
+      - run: python -m pytest tests/test_kids_covariance.py -q
+      - run: python scripts/kids_covariance.py --input data/kids1000-xip.json --output /tmp/kids-covariance.json
