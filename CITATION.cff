@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite it using this metadata."
+title: "Reading Cosmic Shear | KiDS-1000 Data Laboratory"
+abstract: "Explore real KiDS-1000 cosmic-shear correlation measurements, covariance and source-redshift distributions."
+type: software
+authors:
+  - family-names: Jana
+    given-names: Biswajit
+repository-code: "https://github.com/Biswajit1999/cosmic-shear-tomography-lab"
+url: "https://biswajit1999.github.io/cosmic-shear-tomography-lab/"
+keywords:
+  - "astronomy"
+  - "astrophysics"
+  - "scientific computing"
+  - "cosmic shear"
+  - "weak gravitational lensing"
+  - "dark matter mapping"
