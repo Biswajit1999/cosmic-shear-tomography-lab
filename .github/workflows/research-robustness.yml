@@ -1,0 +1,28 @@
+name: KiDS research robustness
+on:
+  push:
+    branches: ["research/**"]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  science:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install research dependencies
+        run: python -m pip install -r requirements-research.txt pytest
+      - name: Test covariance and profile diagnostics
+        run: python -m pytest -q tests/test_shear_robustness.py
+      - name: Execute retained KiDS-1000 derivative
+        run: python scripts/run_shear_robustness.py --output shear_robustness_results.json
+      - name: Validate existing browser model
+        run: npm run check && npm run validate:research
+      - name: Preserve numerical diagnostics
+        uses: actions/upload-artifact@v4
+        with:
+          name: kids-xip-robustness
+          path: shear_robustness_results.json
+          if-no-files-found: error
