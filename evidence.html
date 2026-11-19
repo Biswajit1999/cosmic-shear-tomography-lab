@@ -19,18 +19,25 @@ figcaption{margin-top:.6rem;color:#3b5362}.meta{color:#3b5362;font-size:.9rem}
 details{margin:.55rem 0}summary{cursor:pointer}code{overflow-wrap:anywhere}
 .table-scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:.85rem}
 th,td{text-align:left;vertical-align:top;padding:.4rem;border-bottom:1px solid #dce3e7}
-a:focus-visible,summary:focus-visible{outline:2px solid #7b4107;outline-offset:3px}
+.index ul{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin:1rem 0 0;padding:0;list-style:none}
+.skip{position:absolute;top:0;left:.5rem;background:#fff;padding:.7rem;transform:translateY(-120%)}
+.skip:focus{transform:none;z-index:1}article:target{outline:3px solid #44687d;scroll-margin-top:1rem}
+.table-scroll:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #7b4107;outline-offset:3px}
 </style>
 </head>
 <body>
+<a class="skip" href="#evidence-content">Skip to file list</a>
 <main>
 <header>
 <nav aria-label="Evidence links"><a href="https://github.com/Biswajit1999/cosmic-shear-tomography-lab#readme">Methods and references</a><a href="evidence/manifest.json" download>Download the file inventory</a></nav>
 <h1>Reading Cosmic Shear: a KiDS-1000 Data Laboratory</h1>
 <p>Browse 2 versioned evidence files. Table previews simply display stored rows. Consult the project report for the source, processing steps, and inference assumptions.</p>
 </header>
+<div id="evidence-content">
+<nav aria-label="On this page" class="index"><ul><li><a href="#group-data-and-provenance">Data and provenance (1)</a></li><li><a href="#group-tables-and-numerical-results">Tables and numerical results (1)</a></li></ul></nav>
 
-<section><h2>Data and provenance</h2><div class="grid"><article><h3><a href="data/kids1000-xip.json">Kids1000 xip</a></h3><p class="meta">JSON · 84,654 bytes · Array lengths pairs: 15, redshift_distributions: 5</p><p><a href="data/kids1000-xip.json" download>Download JSON</a></p><details><summary>SHA-256, LF-normalised text</summary><code>4d017dc1c0fd8925ca57a5c52680bfecdff4f1553074a647cca389a0a724c173</code></details></article></div></section><section><h2>Tables and numerical results</h2><div class="grid"><article><h3><a href="research/source/kids_xipm.fits">Kids xipm</a></h3><p class="meta">FITS · 622,080 bytes</p><p><a href="research/source/kids_xipm.fits" download>Download FITS</a></p><details><summary>SHA-256, exact bytes</summary><code>466d1d761fedac02e53b5468cdbab20f622c2f04b830085cccdae5b629ebe66c</code></details></article></div></section>
+<section id="group-data-and-provenance"><h2>Data and provenance</h2><div class="grid"><article id="file-7c4ab618e62f0c73"><h3><a href="data/kids1000-xip.json">Kids1000 xip</a></h3><p class="meta">JSON · 84,654 bytes · Array lengths pairs: 15, redshift_distributions: 5</p><p><a href="data/kids1000-xip.json" download>Download JSON</a> · <a href="#file-7c4ab618e62f0c73" aria-label="Link to Kids1000 xip">Permalink</a></p><details><summary>SHA-256, LF-normalised text</summary><code>4d017dc1c0fd8925ca57a5c52680bfecdff4f1553074a647cca389a0a724c173</code></details></article></div></section><section id="group-tables-and-numerical-results"><h2>Tables and numerical results</h2><div class="grid"><article id="file-e77f31ca3613898c"><h3><a href="research/source/kids_xipm.fits">Kids xipm</a></h3><p class="meta">FITS · 622,080 bytes</p><p><a href="research/source/kids_xipm.fits" download>Download FITS</a> · <a href="#file-e77f31ca3613898c" aria-label="Link to Kids xipm">Permalink</a></p><details><summary>SHA-256, exact bytes</summary><code>466d1d761fedac02e53b5468cdbab20f622c2f04b830085cccdae5b629ebe66c</code></details></article></div></section>
+</div>
 <p class="scope">SHA-256 values verify the stored files. They do not independently validate the scientific analysis. Rebuild this page with <code>python scripts/evidence_catalog.py</code> followed by <code>python scripts/render_evidence_page.py</code>.</p>
 </main>
 </body>
