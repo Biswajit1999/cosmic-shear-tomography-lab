@@ -8,6 +8,9 @@ An evidence-first browser laboratory built from the official KiDS-1000 cosmic-sh
 
 ## Research evidence and downloads
 
+
+- Start with [Kids xipm](research/source/kids_xipm.fits), [Kids1000 xip](data/kids1000-xip.json).
+
 [Open the evidence browser](https://biswajit1999.github.io/cosmic-shear-tomography-lab/evidence.html) for 2 selected files, including [`kids_xipm.fits`](research/source/kids_xipm.fits). Each file has a download link and SHA-256 digest.
 
 Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
