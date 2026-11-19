@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "project": "Reading Cosmic Shear: a KiDS-1000 Data Laboratory",
+  "repository": "https://github.com/Biswajit1999/cosmic-shear-tomography-lab",
+  "files": [
+    {
+      "label": "Kids1000 xip",
+      "path": "data/kids1000-xip.json",
+      "role": "Data and provenance",
+      "bytes": 84654,
+      "sha256": "4d017dc1c0fd8925ca57a5c52680bfecdff4f1553074a647cca389a0a724c173",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "dataset",
+        "statistic",
+        "release_page",
+        "source_archive_url",
+        "source_archive_sha256",
+        "source_fits_sha256",
+        "source_fits_hdu"
+      ],
+      "arrays": {
+        "pairs": 15,
+        "redshift_distributions": 5
+      }
+    },
+    {
+      "label": "Kids xipm",
+      "path": "research/source/kids_xipm.fits",
+      "role": "Tables and numerical results",
+      "bytes": 622080,
+      "sha256": "466d1d761fedac02e53b5468cdbab20f622c2f04b830085cccdae5b629ebe66c",
+      "hash_basis": "exact bytes",
+      "format": "FITS"
+    }
+  ]
+}

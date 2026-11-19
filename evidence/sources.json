@@ -1,0 +1,16 @@
+{
+  "project": "Reading Cosmic Shear: a KiDS-1000 Data Laboratory",
+  "repository": "https://github.com/Biswajit1999/cosmic-shear-tomography-lab",
+  "files": [
+    {
+      "label": "Kids1000 xip",
+      "path": "data/kids1000-xip.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Kids xipm",
+      "path": "research/source/kids_xipm.fits",
+      "role": "Tables and numerical results"
+    }
+  ]
+}
