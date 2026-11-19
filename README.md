@@ -6,6 +6,12 @@ An evidence-first browser laboratory built from the official KiDS-1000 cosmic-sh
 
 **[Open the live laboratory](https://biswajit1999.github.io/cosmic-shear-tomography-lab/)**
 
+## Research evidence and downloads
+
+[Open the evidence browser](https://biswajit1999.github.io/cosmic-shear-tomography-lab/evidence.html) for 2 selected files, including [`kids_xipm.fits`](research/source/kids_xipm.fits). Each file has a download link and SHA-256 digest.
+
+Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
+
 ## Research question
 
 How does the evidence for correlated galaxy shapes change as the source population moves to greater redshift?
